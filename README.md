@@ -12,7 +12,6 @@ This portfolio showcases my skills, projects, certifications, and contact inform
 
 ## 📌 Features
 
-✨ Dark Modern UI  
 📱 Fully Responsive (Mobile, Tablet & Desktop)  
 🧭 Smooth Scroll Navigation  
 🖼 Hero Section with Profile Image  
