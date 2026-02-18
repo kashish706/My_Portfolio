@@ -6,7 +6,7 @@ This portfolio showcases my skills, projects, certifications, and contact inform
 ---
 
 ## 🚀 Live Preview
-kashish706.github.io/My_Portfolio/
+[Live: ](https://kashish706.github.io/My_Portfolio/)
 
 ---
 
