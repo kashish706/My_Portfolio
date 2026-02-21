@@ -24,16 +24,6 @@ This portfolio showcases my skills, projects, certifications, and contact inform
 
 ---
 
-## 🛠 Tech Stack
-
-- HTML5  
-- CSS3  
-- Bootstrap 5  
-- JavaScript  
-- Bootstrap Icons  
-
----
-
 ## 📂 Sections Included
 
 - Home  
@@ -41,7 +31,17 @@ This portfolio showcases my skills, projects, certifications, and contact inform
 - Skills  
 - Projects  
 - Certifications  
-- Contact  
+- Contact
+  
+---
+
+## 🛠 Tech Stack
+
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- JavaScript  
+- Bootstrap Icons  
 
 ---
 
