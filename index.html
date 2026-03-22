@@ -7,9 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
@@ -21,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -42,25 +43,57 @@
             </div>
         </div>
     </nav>
-    <section class="hero-section d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="hero-title">
-                    Aspiring Software Developer <br>
-                    <span class="highlight">| MERN Stack Developer</span>
-                    </h1>
-                    <p class="hero-text mt-3">
-                    I turn ideas into interactive web experiences using clean code, modern tools, and a problem-solver’s mindset.
-                    </p>
-                    <a href="my CV sem5.pdf" download class="btn btn-primary mt-3 hero-btn">Download CV</a>
+
+<section class="hero-section d-flex align-items-center" id = "home">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 text-center text-lg-start">
+
+                <h5 class="welcome-text">Welcome to My Portfolio</h5>
+
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Kashish</span>
+                </h1>
+
+                <h3 class="typing-text">
+                    <span id="typing"></span><span class="cursor">|</span>
+                </h3>
+
+                <p class="hero-text mt-3">
+                    I turn ideas into interactive web experiences using clean code,
+                    modern tools, and a problem-solver’s mindset.
+                </p>
+
+                <a href="general cv.pdf" download class="btn btn-primary mt-3 hero-btn">
+                    Download CV
+                </a>
+
+                <!-- Social Icons -->
+                <div class="social-icons mt-4">
+                    <a href="https://github.com/kashish706" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/kashish-srivastava-5955912a2/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="mailto:kashishsrivastava276@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-                <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                    <img src="assets/my photo.jpeg" alt="Kashish" class="hero-img">
-                </div>
+
             </div>
+
+            <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                <img src="assets/my photo.jpeg" alt="Kashish" class="hero-img">
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
     <section class="about-section py-5" id="about">
         <div class="container">
             <div class="text-center mb-5">
@@ -71,27 +104,26 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <p class="about-text">I am Kashish Srivastava, a Computer Science undergraduate 
-                        driven by a passion for building modern web applications and solving real-world 
-                        challenges through code. I love crafting clean, responsive, and user-centered 
-                        digital experiences that combine functionality with thoughtful design.
+                    <p class="about-text">I am Kashish Srivastava, a Computer Science 
+                      undergraduate with a strong interest in building modern web 
+                      applications and solving real-world problems through technology. 
+                      I enjoy creating clean, responsive, and user-focused digital 
+                      experiences that balance functionality with thoughtful design.
                     </p>
                     <p class="about-text">
-                    My technical journey includes frontend development, data analysis,
-                    and interactive dashboard creation using Python and Power BI.
-                    I continuously refine my problem-solving skills through structured
-                    learning and hands-on practice.
+                      My technical journey includes MERN stack development, data analysis,
+                      where I have worked on projects involving interactive dashboards and 
+                      data analysis using Python and Power BI. I also completed training in 
+                      Data Structures and Algorithms using C++, which strengthened my 
+                      problem-solving and logical thinking skills.
                     </p>
                     <p class="about-text">
-                    Beyond academics, I believe technology should make a meaningful impact.
-                    I have contributed to community initiatives through my involvement
-                    with iSupport Foundation, Lucknow.
+                    Through continuous learning and hands-on projects, I aim to develop 
+                    scalable solutions and expand my expertise in full-stack development 
+                    and data-driven technologies. Beyond academics, I believe technology 
+                    should create a positive impact, and I have contributed to community 
+                    initiatives through my involvement with iSupport Foundation, Lucknow.
                     </p>
-                    <div class="about-info mt-4">
-                        <p><strong>Education:</strong> B.Tech CSE (2023–Present)</p>
-                        <p><strong>University:</strong> Lovely Professional University</p>
-                        <p><strong>CGPA:</strong> 7.86 </p>
-                    </div>
                 </div>
                 <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="row g-4">
@@ -128,46 +160,140 @@
             </div>
         </div>
     </section>
+
+    
     <section class="skills-section py-5" id="skills">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Skills</h2>
-                <p class="section-subtitle">
-                    Technical expertise and tools I work with
-                </p>
+
+          <div class="text-center mb-5">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">
+            Technical expertise and tools I work with
+            </p>
+          </div>
+        
+          <div class="row g-4">
+        <!-- Languages -->
+            <div class="col-md-6">
+              <div class="skill-card">
+
+              <h5>Languages</h5>
+
+              <div class="skills-row">
+
+                <div class="skill-icon-box">
+                  <i class="devicon-python-plain colored"></i>
+                  <p>Python</p>
+                </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-cplusplus-plain colored"></i>
+                  <p>C++</p>
+                </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-java-plain colored"></i>
+                  <p>Java</p>
+                </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <p>JavaScript</p>
+                </div>
+
+              </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-card text-center">
-                        <i class="bi bi-code-slash skill-icon"></i>
-                        <h5>Languages</h5>
-                        <p>Python, C, C++, Java, SQL, HTML5, CSS3, JavaScript</p>
-                    </div>
+          </div>
+
+            <!-- Web Technology -->
+          <div class="col-md-6">
+            <div class="skill-card">
+              <h5>Web Technology</h5>
+              <div class="skills-row">
+                <div class="skill-icon-box">
+                  <i class="devicon-html5-plain colored"></i>
+                  <p>HTML5</p>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-card text-center">
-                        <i class="bi bi-boxes skill-icon"></i>
-                        <h5>Libraries</h5>
-                        <p>NumPy, Pandas, Matplotlib, Scikit-Learn</p>
-                    </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-css3-plain colored"></i>
+                  <p>CSS3</p>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-card text-center">
-                        <i class="bi bi-layers skill-icon"></i>
-                        <h5>Framework</h5>
-                        <p>Bootstrap</p>
-                    </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-react-original colored"></i>
+                  <p>React.js</p>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="skill-card text-center">
-                        <i class="bi bi-tools skill-icon"></i>
-                        <h5>Tools & Platforms</h5>
-                        <p>Excel, Power BI</p>
-                    </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-nodejs-plain colored"></i>
+                  <p>Node.js</p>
                 </div>
+              </div>
             </div>
+          </div>
+            <!-- Libraries -->
+          <div class="col-md-6">
+            <div class="skill-card">
+            <h5>Libraries / Frameworks</h5>
+              <div class="skills-row">
+                <div class="skill-icon-box">
+                  <img src="https://cdn.simpleicons.org/numpy/013243">
+                  <p>NumPy</p>
+                </div>
+
+                <div class="skill-icon-box">
+                  <img src="https://cdn.simpleicons.org/pandas/150458">
+                  <p>Pandas</p>
+                </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-matplotlib-plain colored"></i>
+                  <p>Matplotlib</p>
+                </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-scikitlearn-plain colored"></i>
+                  <p>Scikit-Learn</p>
+                </div>
+
+                <div class="skill-icon-box">
+                  <i class="devicon-bootstrap-plain colored"></i>
+                  <p>Bootstrap</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+            <!-- Tools -->
+          <div class="col-md-6">
+            <div class="skill-card">
+              <h5>Tools / Platforms</h5>
+              <div class="skills-row">
+                <div class="skill-icon-box">
+                  <i class="devicon-microsoftsqlserver-plain colored"></i>
+                  <p>Excel</p>
+                </div>
+                <div class="skill-icon-box">
+                  <img src="https://img.icons8.com/color/48/power-bi.png">
+                  <p>Power BI</p>
+                </div>
+                <div class="skill-icon-box">
+                  <i class="devicon-git-plain colored"></i>
+                  <p>Git</p>
+                </div>
+                <div class="skill-icon-box">
+                  <img src="https://img.icons8.com/color/48/linux.png">
+                  <p>Linux</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+    </div>
+  </section>
+
   <section class="projects-section py-5" id="projects">
     <div class="container">
       <div class="text-center mb-5">
@@ -177,6 +303,41 @@
         </p>
       </div>
       <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/lifesync.png" class="project-img" alt="LifeSync App">
+              <span class="project-date">Mar 2026</span>
+            </div>
+            <div class="project-content">
+              <h5>LifeSync – Smart Lifestyle Assistant</h5>
+              <p>
+                A responsive lifestyle web application that integrates multiple APIs
+                to provide users with daily utilities like weather updates and
+                productivity tools in a single platform.
+              </p>
+              <h6 class="feature-title">Key Features:</h6>
+              <ul class="feature-list">
+                <li>Integrated multiple third-party APIs</li>
+                <li>Real-time dynamic data fetching</li>
+                <li>Interactive and user-friendly dashboard</li>
+              </ul>
+              <div class="tech-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>REST API</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="https://github.com/kashish706/LifeSync"
+                target="_blank"
+                class="btn btn-sm project-btn">
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-4 col-md-6">
           <div class="project-card">
             <div class="project-img-wrapper">
@@ -242,7 +403,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="project-card">
             <div class="project-img-wrapper">
-              <img src="assets/python.jpg" class="project-img" alt="Python Data Analysis">
+              <img src="assets/corona py.jpg" class="project-img" alt="Python Data Analysis">
               <span class="project-date">Apr 2025</span>
             </div>
             <div class="project-content">
@@ -272,6 +433,8 @@
       </div>
     </div>
   </section>
+
+
   <section class="cert-section py-5" id="certifications">
     <div class="container">
       <div class="text-center mb-5">
@@ -283,112 +446,211 @@
       <div class="row g-4">
         <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
           <div class="cert-card w-100">
-            <div class="cert-header">
-              <span class="cert-platform">Infosys</span>
+             <div class="cert-img-wrapper">
+              <img src="assets/info.png" class="cert-img">
+              <a href="assets/infosys l3 master.pdf" target="_blank" class="cert-arrow">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <div class="cert-content">
+              <h5>Master Generative AI & Generative AI Tools</h5>
+              <span class="cert-company">Infosys</span>
               <span class="cert-date">Sept 2025</span>
+              <p>
+                Focused on practical applications of generative AI tools and real-world AI solutions.
+              </p>
             </div>
-            <h5>Master Generative AI & Generative AI Tools</h5>
-            <p>
-              Focused on practical applications of generative AI tools and real-world AI solutions.
-            </p>
-            <h6 class="skill-title">Skills Gained:</h6>
-            <div class="cert-tags">
-              <span>Generative AI</span>
-              <span>Prompt Engineering</span>
-              <span>AI Tools</span>
-            </div>
-            <a href="assets/infosys l3 master.pdf" class="download-btn" download>
-              Download Certificate
-            </a>
           </div>
         </div>
+
         <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
           <div class="cert-card w-100">
-            <div class="cert-header">
-              <span class="cert-platform">Board Infinity</span>
-              <span class="cert-date">Jun–Jul 2025</span>
-            </div>
+                <div class="cert-img-wrapper">
+                  <img src="assets/board.png" class="cert-img">
+                  <a href="assets/Summer Training Certificate DSA CPP.pdf" target="_blank" class="cert-arrow">
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+              </div>
+            <div class="cert-content">
             <h5>Mastering Data Structures & Algorithms</h5>
+            <span class="cert-company">Board Infinity</span>
+            <span class="cert-date">Jun-Jul 2025</span>
             <p>
               In-depth training covering core DSA concepts and problem-solving strategies.
             </p>
-            <h6 class="skill-title">Skills Gained:</h6>
-            <div class="cert-tags">
-              <span>Data Structures</span>
-              <span>Algorithms</span>
-              <span>C++ STL</span>
             </div>
-            <a href="assets/Summer Training Certificate DSA CPP.pdf" class="download-btn" download>
-              Download Certificate
-            </a>
           </div>
         </div>
         <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
           <div class="cert-card w-100">
-            <div class="cert-header">
-              <span class="cert-platform">NPTEL</span>
+
+            <div class="cert-img-wrapper">
+              <img src="assets/nptel.png" class="cert-img">
+              <a href="assets/Cloud Computing nptel.pdf" target="_blank" class="cert-arrow">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="cert-content">
+              <h5>Cloud Computing Certification</h5>
+              <span class="cert-company">NPTEL</span>
               <span class="cert-date">Apr 2025</span>
+              <p>
+                Fundamental and advanced concepts of Cloud Computing,
+                virtualization and distributed systems architecture.
+              </p>
             </div>
-            <h5>Cloud Computing</h5>
-            <p>
-              Covered cloud architecture, virtualization, and distributed systems fundamentals.
-            </p>
-            <h6 class="skill-title">Skills Gained:</h6>
-            <div class="cert-tags">
-              <span>Cloud Architecture</span>
-              <span>Virtualization</span>
-              <span>Distributed Systems</span>
-            </div>
-            <a href="assets/Cloud Computing nptel.pdf" class="download-btn" download>
-              Download Certificate
-            </a>
           </div>
         </div>
+
         <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
           <div class="cert-card w-100">
-            <div class="cert-header">
-              <span class="cert-platform">Coursera</span>
-              <span class="cert-date">Oct 2024</span>
+            <div class="cert-img-wrapper">
+              <img src="assets/net.png" class="cert-img">
+              <a href="assets/network communication 306.pdf" target="_blank" class="cert-arrow">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
             </div>
+            <div class="cert-content">
             <h5>Network Communication</h5>
+            <span class="cert-company">Coursera</span>
+            <span class="cert-date">Oct 2024</span>
             <p>
               Studied networking fundamentals including protocols and routing concepts.
             </p>
-            <h6 class="skill-title">Skills Gained:</h6>
-            <div class="cert-tags">
-              <span>TCP/IP</span>
-              <span>Routing</span>
-              <span>Networking Basics</span>
             </div>
-            <a href="assets/network communication 306.pdf" class="download-btn" download>
-              Download Certificate
-            </a>
           </div>
         </div>
+
         <div class="col-xl-4 col-lg-6 col-md-6 d-flex">
           <div class="cert-card w-100">
-            <div class="cert-header">
-              <span class="cert-platform">Coursera</span>
+            <div class="cert-img-wrapper">
+              <img src="assets/bit.png" class="cert-img">
+              <a href="assets/bits and bytes 306.pdf" target="_blank" class="cert-arrow">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+             <div class="cert-content">
+              <h5>The Bits and Bytes of Computer Networking</h5>
+              <span class="cert-company">Coursera</span>
               <span class="cert-date">Sept 2024</span>
+              <p>
+                Comprehensive course on network protocols, security, and system communication.
+              </p>
             </div>
-            <h5>The Bits and Bytes of Computer Networking</h5>
-            <p>
-              Comprehensive course on network protocols, security, and system communication.
-            </p>
-            <h6 class="skill-title">Skills Gained:</h6>
-            <div class="cert-tags">
-              <span>Network Protocols</span>
-              <span>Security</span>
-              <span>System Communication</span>
-            </div>
-            <a href="assets/bits and bytes 306.pdf" class="download-btn" download>
-              Download Certificate
-            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
+<section class="education-section py-5" id="education">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">
+        Academic journey and milestones
+      </p>
+    </div>
+
+    <div class="timeline-horizontal">
+
+      <!-- Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <h5>Lovely Professional University</h5>
+        <span class="edu-location">Phagwara, Punjab</span>
+        <p>B.Tech – Computer Science & Engineering</p>
+        <span class="edu-date">Aug 2023 – Present</span>
+        <p class="edu-score">CGPA: 7.86</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <h5>S.J.S. Public School</h5>
+        <span class="edu-location">Raebareli, Uttar Pradesh</span>
+        <p>Intermediate</p>
+        <span class="edu-date">Apr 2022 – Mar 2023</span>
+        <p class="edu-score">Percentage: 86.6%</p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <h5>S.J.S. Public School</h5>
+        <span class="edu-location">Raebareli, Uttar Pradesh</span>
+        <p>Matriculation</p>
+        <span class="edu-date">Apr 2020 – Mar 2021</span>
+        <p class="edu-score">Percentage: 87%</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="achievements-section py-5" id="achievements">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Achievements</h2>
+      <p class="section-subtitle">
+        Milestones that reflect my learning and competitive spirit
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Achievement 1 -->
+      <div class="col-md-4">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <p>
+            Secured a <strong>Top 10 position</strong> among 100+ teams in a 
+            Hackathon conducted by Lovely Professional University.
+          </p>
+        </div>
+      </div>
+
+      <!-- Achievement 2 -->
+      <div class="col-md-4">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <p>
+            Solved <strong>100+ LeetCode DSA problems</strong>, improving logic building,
+            time complexity analysis, and coding proficiency.
+          </p>
+        </div>
+      </div>
+
+      <!-- Achievement 3 -->
+      <div class="col-md-4">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <p>
+            Secured <strong>Second Prize</strong> in the Treasure & Hack event
+            conducted by the School of Computer Science and Engineering.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
   <section class="contact-section py-5" id="contact">
     <div class="container">
       <div class="text-center mb-5">
