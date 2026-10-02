@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kashish's Portfolio</title>
+
+  <!-- Bootstrap 5 + Icons + Font -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-role="mern">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-xl nb-nav fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">KASHISH | PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle menu">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-2">
+          <li class="nav-item"><a class="nav-link" href="#about">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Technical Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Featured Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Training &amp; Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Highlights</a></li>
+          <li class="nav-item"><a class="nav-btn" href="#contact">Let’s Connect</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO + ROLE SWITCHER ============ -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="nb-sticker">Open to work</span>
+          <h1 class="hero-title">HI, I'M <span class="name-block" id="heroName">KASHISH</span></h1>
+
+          <!-- Role switcher -->
+          <div class="role-switcher" role="tablist" aria-label="Choose a role">
+            <button class="role-btn active" data-role="mern">MERN STACK</button>
+            <button class="role-btn" data-role="frontend">FRONTEND</button>
+            <button class="role-btn" data-role="data">DATA ANALYST</button>
+          </div>
+
+          <!-- Tagline text changes with role (JS in Step 4) -->
+          <p class="hero-tag" id="heroTag">I create modern digital experiences by combining MERN Stack development, frontend engineering, and data-driven solutions.</p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="nb-btn" id="cvBtn" href="https://drive.google.com/file/d/16U7slF6R0hZi8oE7IAetAU1nnjWVH7MD/view?usp=sharing" target="_blank" rel="noopener">Download CV <i class="bi bi-download"></i></a>
+            <a class="nb-btn nb-btn-light" href="#projects">See my work</a>
+          </div>
+
+          <div class="social-row">
+            <a href="https://github.com/kashish706" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/kashish-srivastava-5955912a2/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:kashishsrivastava276@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="photo-wrap">
+            <div class="photo-back"></div>
+            <img class="photo-front" src="assets/my%20photo.jpeg" alt="Kashish Srivastava">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>REACT ✦ NODE ✦ EXPRESS ✦ MONGODB ✦ JAVASCRIPT ✦ BOOTSTRAP ✦ PYTHON ✦ PANDAS ✦ POWER BI ✦ C++ ✦ SQL ✦</span>
+      <span>REACT ✦ NODE ✦ EXPRESS ✦ MONGODB ✦ JAVASCRIPT ✦ BOOTSTRAP ✦ PYTHON ✦ PANDAS ✦ POWER BI ✦ C++ ✦ SQL ✦</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Professional Profile</h2>
+      <p class="section-sub">Building practical solutions through MERN Stack development, data, and continuous learning</p>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="nb-card about-text">
+            <p>I am Kashish Srivastava, a Computer Science and Engineering undergraduate with a strong interest in MERN Stack development, frontend engineering, data science, and emerging AI technologies. I enjoy transforming ideas into practical digital solutions by combining clean user interfaces, efficient application logic, and data-driven thinking.</p>
+            <p>My project experience includes MERN Stack applications with React, Node.js, Express.js, MongoDB, REST APIs, and JWT authentication, along with frontend projects and data-focused work using Python, Pandas, NumPy, Matplotlib, Seaborn, and Power BI. I have also gained hands-on exposure to Cloud and DevOps through training with AWS, Docker, Git/GitHub, EC2, S3, and CloudFront.</p>
+            <p>Alongside development, I have strengthened my problem-solving foundation through Data Structures and Algorithms training in C++ and continuous coding practice. I am focused on building scalable, responsive, and meaningful solutions while continuously expanding my skills across MERN Stack development, data, cloud technologies, and AI.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="row g-4">
+            <div class="col-6"><div class="nb-card stat-card"><i class="bi bi-code-slash"></i><h3>Web Development</h3><p>Responsive, scalable apps with modern frontend tools.</p></div></div>
+            <div class="col-6"><div class="nb-card stat-card"><i class="bi bi-bar-chart-fill"></i><h3>Data Analytics</h3><p>Raw data turned into insights and dashboards.</p></div></div>
+            <div class="col-6"><div class="nb-card stat-card"><i class="bi bi-puzzle-fill"></i><h3>Problem Solving</h3><p>Logical, structured thinking for efficient solutions.</p></div></div>
+            <div class="col-6"><div class="nb-card stat-card"><i class="bi bi-heart-fill"></i><h3>Community Work</h3><p>iSupport Foundation, Lucknow.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-sub">Technologies, frameworks, libraries, and tools I work with</p>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="nb-card">
+            <h3 class="card-heading">Languages</h3>
+            <div class="chips">
+              <span class="chip" data-role="data">Python</span>
+              <span class="chip">C++</span>
+              <span class="chip">Java</span>
+              <span class="chip">SQL</span>
+              <span class="chip" data-role="mern frontend">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="nb-card">
+            <h3 class="card-heading">Web technology</h3>
+            <div class="chips">
+              <span class="chip" data-role="frontend">HTML5</span>
+              <span class="chip" data-role="frontend">CSS3</span>
+              <span class="chip" data-role="mern frontend">React.js</span>
+              <span class="chip" data-role="mern">Node.js</span>
+              <span class="chip" data-role="mern">Express.js</span>
+              <span class="chip" data-role="mern">MongoDB</span>
+              <span class="chip" data-role="mern">JWT</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="nb-card">
+            <h3 class="card-heading">Libraries / frameworks</h3>
+            <div class="chips">
+              <span class="chip" data-role="data">NumPy</span>
+              <span class="chip" data-role="data">Pandas</span>
+              <span class="chip" data-role="data">Matplotlib</span>
+              <span class="chip" data-role="data">Seaborn</span>
+              <span class="chip" data-role="data">Scikit-Learn</span>
+              <span class="chip" data-role="frontend">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="nb-card">
+            <h3 class="card-heading">Tools / platforms</h3>
+            <div class="chips">
+              <span class="chip" data-role="data">Excel</span>
+              <span class="chip" data-role="data">Power BI</span>
+              <span class="chip">Git</span>
+              <span class="chip">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Work</h2>
+      <p class="section-sub">Selected projects demonstrating development, data analysis, and problem-solving</p>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="mern">MERN STACK</button>
+        <button class="filter-btn" data-filter="frontend">FRONTEND</button>
+        <button class="filter-btn" data-filter="data">DATA ANALYST</button>
+      </div>
+
+      <!-- Featured MERN project -->
+      <article class="project-card featured" data-role="mern">
+        <div class="row g-0">
+          <div class="col-lg-7 featured-main">
+            <div class="pcard-top">
+              <span class="pcard-num">01</span>
+              <span class="pcard-icon"><i class="bi bi-calendar2-check"></i></span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta">
+                <span class="tag tag-mern">MERN STACK</span><small>Jul 2026</small>
+              </div>
+              <h3>HabitFlow – Daily Habit Tracker</h3>
+              <p>MERN Stack daily habit tracker with JWT login, streaks and a monthly progress calendar.</p>
+              <div class="stack">
+                <span>React.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+              </div>
+            </div>
+            <div class="pcard-actions">
+              <a class="nb-btn nb-btn-sm" href="https://habit-flow-chi-ecru.vercel.app/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+              <a class="nb-btn nb-btn-sm nb-btn-light" href="https://github.com/kashish706/Habit-Flow" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="col-lg-5 featured-side">
+            <h4>Key features</h4>
+            <ul class="feature-list">
+              <li>Register and log in with JWT authentication</li>
+              <li>Mark habits complete or undo them each day</li>
+              <li>Streak tracking for every habit</li>
+              <li>Monthly progress calendar and profile stats</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Grid projects -->
+      <div class="row g-4 mt-1" id="projectGrid">
+
+        <div class="col-md-6 col-lg-4 project-item" data-role="frontend">
+          <article class="project-card pcard">
+            <div class="pcard-top">
+              <span class="pcard-num">02</span>
+              <span class="pcard-icon"><i class="bi bi-cloud-sun"></i></span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta"><span class="tag tag-frontend">FRONTEND</span> <small>Mar 2026</small></div>
+              <h3>LifeSync – Smart Lifestyle Assistant</h3>
+              <p>Responsive lifestyle web app that combines multiple APIs for weather and productivity tools in one place.</p>
+              <ul class="feature-list">
+                <li>Integrated multiple third-party APIs</li>
+                <li>Real-time dynamic data fetching</li>
+                <li>Interactive, user-friendly dashboard</li>
+              </ul>
+              <div class="stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span></div>
+            </div>
+            <div class="pcard-actions">
+              <a class="nb-btn nb-btn-sm" href="https://lifesync-hub.netlify.app/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+              <a class="nb-btn nb-btn-sm nb-btn-light" href="https://github.com/kashish706/LifeSync" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-role="frontend">
+          <article class="project-card pcard">
+            <div class="pcard-top">
+              <span class="pcard-num">03</span>
+              <span class="pcard-icon"><i class="bi bi-building"></i></span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta"><span class="tag tag-frontend">FRONTEND</span> <small>Feb 2026</small></div>
+              <h3>TechNova – Corporate Company Website</h3>
+              <p>Responsive corporate website template with a modern UI and structured layout.</p>
+              <ul class="feature-list">
+                <li>Fully responsive design</li>
+                <li>Career form with validation</li>
+                <li>Smooth transitions</li>
+              </ul>
+              <div class="stack"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>JavaScript</span></div>
+            </div>
+            <div class="pcard-actions">
+              <a class="nb-btn nb-btn-sm" href="https://kashish706.github.io/TechNova-Solutions/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+              <a class="nb-btn nb-btn-sm nb-btn-light" href="https://github.com/kashish706/TechNova-Solutions" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-role="frontend">
+          <article class="project-card pcard">
+            <div class="pcard-top">
+              <span class="pcard-num">04</span>
+              <span class="pcard-icon"><i class="bi bi-cup-hot"></i></span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta"><span class="tag tag-frontend">FRONTEND</span><small>Feb 2026</small></div>
+              <h3>Velvet Brew – Coffee Shop</h3>
+              <p>Responsive multi-page luxury coffee shop website with an order form that calculates prices automatically.</p>
+              <ul class="feature-list">
+                <li>Menu filter: Hot, Cold, Desserts</li>
+                <li>Order form with auto total</li>
+                <li>Gallery with hover zoom and animated stats</li>
+              </ul>
+              <div class="stack"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>JavaScript</span></div>
+            </div>
+            <div class="pcard-actions">
+              <a class="nb-btn nb-btn-sm" href="https://kashish706.github.io/VelVetBrew_CoffeeShop/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
+              <a class="nb-btn nb-btn-sm nb-btn-light" href="https://github.com/kashish706/VelVetBrew_CoffeeShop" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-role="data">
+          <article class="project-card pcard">
+            <div class="pcard-top">
+              <span class="pcard-num">05</span>
+              <span class="pcard-icon"><i class="bi bi-graph-up-arrow"></i></span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta"><span class="tag tag-data">DATA</span> <small>Dec 2025</small></div>
+              <h3>COVID-19 Dashboard (Power BI)</h3>
+              <p>Interactive dashboard analyzing COVID-19 trends across India.</p>
+              <ul class="feature-list">
+                <li>Interactive state-wise map</li>
+                <li>Vaccination comparison charts</li>
+                <li>Monthly trend analysis</li>
+              </ul>
+              <div class="stack"><span>Power BI</span><span>DAX</span><span>Power Query</span></div>
+            </div>
+            <div class="pcard-actions">
+              <a class="nb-btn nb-btn-sm" href="https://github.com/kashish706/covid19_powerBI" target="_blank" rel="noopener"><i class="bi bi-github"></i> View on GitHub</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-role="data">
+          <article class="project-card pcard">
+            <div class="pcard-top">
+              <span class="pcard-num">06</span>
+              <span class="pcard-icon"><i class="bi bi-pie-chart"></i></span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta"><span class="tag tag-data">DATA</span> <small>Apr 2025</small></div>
+              <h3>COVID-19 Data Analysis</h3>
+              <p>Python-based analysis project with visualization of COVID-19 trends.</p>
+              <ul class="feature-list">
+                <li>Data cleaning and preprocessing</li>
+                <li>Interactive visualizations</li>
+                <li>Exploratory data analysis</li>
+              </ul>
+              <div class="stack"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+            </div>
+            <div class="pcard-actions">
+              <a class="nb-btn nb-btn-sm" href="https://github.com/kashish706/covid19_python" target="_blank" rel="noopener"><i class="bi bi-github"></i> View on GitHub</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAINING & CERTIFICATIONS ============ -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Training &amp; Certifications</h2>
+      <p class="section-sub">Hands-on training and certifications supporting my technical growth</p>
+
+      <h3 class="card-heading mt-4 mb-3">Training</h3>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="cert-card">
+            <h3>Winter Training – MERN Stack, Cloud &amp; DevOps</h3>
+            <small>Cantilever Labs · Jan–May 2026</small>
+            <p>Hands-on training in MERN Stack development, Docker, AWS, Git/GitHub and cloud deployment using EC2, S3, and CloudFront.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="cert-card has-link">
+            <h3>Summer Training – Mastering Data Structures &amp; Algorithms</h3>
+            <small>Board Infinity · Jun–Jul 2025</small>
+            <p>Training in DSA using C++, covering sorting, recursion, dynamic programming, C++ STL, and coding problem-solving.</p>
+            <a class="cert-link stretched-link" href="https://drive.google.com/file/d/1H-mIIucaZpGdgZJcaO531ZxemhxMv5HA/view?usp=sharing" target="_blank" rel="noopener">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="card-heading mt-5 mb-3">Certifications</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card has-link">
+            <h3>Master Generative AI &amp; Generative AI Tools</h3>
+            <small>Infosys · Sept 2025</small>
+            <p>Practical learning focused on generative AI tools and their applications in real-world solutions.</p>
+            <a class="cert-link stretched-link" href="https://drive.google.com/file/d/1dE9DKKe41UMqj9fAVjSoqGUSb7sCzuOq/view?usp=sharing" target="_blank" rel="noopener">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card has-link">
+            <h3>Cloud Computing</h3>
+            <small>NPTEL · Apr 2025</small>
+            <p>Cloud computing concepts, virtualization, distributed systems, and cloud architecture fundamentals.</p>
+            <a class="cert-link stretched-link" href="https://drive.google.com/file/d/1lN7Zkt9nhMuLcpko7EeYpdwR6q-PeDa8/view?usp=sharing" target="_blank" rel="noopener">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card has-link">
+            <h3>Network Communication</h3>
+            <small>Coursera · Oct 2024</small>
+            <p>Networking fundamentals covering communication, protocols, and routing concepts.</p>
+            <a class="cert-link stretched-link" href="https://drive.google.com/file/d/1FC3ZZQftGMiZJ_JbC7tUZIjSRyVUcebk/view?usp=sharing" target="_blank" rel="noopener">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="cert-card has-link">
+            <h3>The Bits and Bytes of Computer Networking</h3>
+            <small>Coursera · Sept 2024</small>
+            <p>Foundations of computer networking, protocols, security, and system communication.</p>
+            <a class="cert-link stretched-link" href="https://drive.google.com/file/d/1VJVM3PB9sWwPpI90JR3MGMGsRZuyefWT/view?usp=sharing" target="_blank" rel="noopener">View Certificate <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education &amp; Academic Journey</h2>
+      <p class="section-sub">Academic foundation, qualifications, and key milestones</p>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="nb-card edu-card">
+            <small>Aug 2023 – Present</small>
+            <h3>Lovely Professional University</h3>
+            <p>Phagwara, Punjab</p>
+            <p><b>B.Tech – Computer Science &amp; Engineering</b></p>
+            <span class="chip">CGPA: 7.99</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="nb-card edu-card">
+            <small>Apr 2022 – Mar 2023</small>
+            <h3>S.J.S. Public School</h3>
+            <p>Raebareli, Uttar Pradesh</p>
+            <p><b>Intermediate</b></p>
+            <span class="chip">86.6%</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="nb-card edu-card">
+            <small>Apr 2020 – Mar 2021</small>
+            <h3>S.J.S. Public School</h3>
+            <p>Raebareli, Uttar Pradesh</p>
+            <p><b>Matriculation</b></p>
+            <span class="chip">87%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Highlights</h2>
+      <p class="section-sub">Milestones reflecting problem-solving, learning, and technical growth</p>
+
+      <div class="row g-4">
+        <div class="col-md-4"><div class="nb-card badge-card"><i class="bi bi-trophy-fill"></i><p>Secured a <b>Top 10 position</b> among 50+ teams in a Hackathon conducted by Lovely Professional University.</p></div></div>
+        <div class="col-md-4"><div class="nb-card badge-card"><i class="bi bi-lightning-charge-fill"></i><p>Solved <b>150+  LeetCode and GeeksforGeeks DSA problems</b>, improving logic building, time complexity analysis, and coding proficiency.</p></div></div>
+        <div class="col-md-4"><div class="nb-card badge-card"><i class="bi bi-award-fill"></i><p>Secured <b>Second Prize</b> in the Treasure &amp; Hack event conducted by the School of Computer Science and Engineering.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Let’s Connect</h2>
+      <p class="section-sub">Open to internships, opportunities, projects, and meaningful collaborations</p>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="nb-card">
+            <h3 class="card-heading">Let's connect!</h3>
+            <p>I'm always open to discussing new opportunities, interesting projects, or potential collaborations.</p>
+            <p><i class="bi bi-envelope-fill"></i> kashishsrivastava276@gmail.com</p>
+            <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/kashish-srivastava-5955912a2/" target="_blank" rel="noopener">View profile</a></p>
+            <p><i class="bi bi-github"></i> <a href="https://github.com/kashish706" target="_blank" rel="noopener">View projects</a></p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form class="nb-card note-form" id="contactForm" novalidate>
+            <h3 class="card-heading">Send a message</h3>
+            <input type="text" class="form-control" id="cName" placeholder="Your name" required>
+            <input type="email" class="form-control" id="cEmail" placeholder="Your email" required>
+            <textarea class="form-control" id="cMsg" rows="4" placeholder="Your message" required></textarea>
+            <button type="submit" class="nb-btn">Send message</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2026 Kashish Srivastava · Built with HTML, CSS, Bootstrap &amp; JavaScript</div>
+  </footer>
+
+  <!-- Bootstrap JS + our JS (Step 4) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
