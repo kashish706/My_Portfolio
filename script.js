@@ -26,9 +26,9 @@
   // Leave a role as '' to use the default CV link written in index.html.
   // (The default CV is also what shows before any role is chosen.)
   var CV_LINKS = {
-    mern: '',      // e.g. 'https://drive.google.com/file/d/XXXX/view?usp=sharing'
-    frontend: '',
-    data: ''
+    mern: 'https://drive.google.com/file/d/1l9SiDyBN3jgge9_LpoOSi2_O55jbDpHB/view?usp=sharing',      // e.g. 'https://drive.google.com/file/d/XXXX/view?usp=sharing'
+    frontend: 'https://drive.google.com/file/d/1Qp72C_dq3Pd-E4rKqzdcONdq_n5Rvfvs/view?usp=sharing',
+    data: 'https://drive.google.com/file/d/1tLa4L3548Qrl3ROuNHkJaZK_-WcW1uJo/view?usp=sharing'
   };
 
   // true  = clicking a role button also filters the projects to that role
